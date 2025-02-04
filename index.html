@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Sign up Form</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-   
+    <div id="sidebar"></div>
+    <div id="content">
+      <div class="content-header">
+        <div class="content-container">
+          <h2>
+            This is not a real online service! You know you need something like
+            this in your life to help you realise your deepest dreams. Sign up
+            now to get started!
+          </h2>
+          <h2>You know you want to!</h2>
+        </div>
+      </div>
+      <div class="content-body">
+        <div class="content-container">
+          <form id="form" action="#" method="POST">
+            <div class="form-row-container">
+              <div class="form-box-container">
+                <label for="first_name">First Name:</label>
+                <div class="form-input-container">
+                  <input
+                    type="text"
+                    id="first_name"
+                    name="first_name"
+                    placeholder=""
+                    minlength="4"
+                    maxlength="16"
+                    title="Minimum of 4 characters. Maximum of 16 characters"
+                    required=""
+                  />
+                </div>
+              </div>
+              <div class="form-box-container">
+                <label for="last_name">Last Name:</label>
+                <div class="form-input-container">
+                  <input
+                    type="text"
+                    id="last_name"
+                    name="last_name"
+                    placeholder=""
+                    minlength="4"
+                    maxlength="16"
+                    title="Minimum of 4 characters. Maximum of 16 characters"
+                    required=""
+                  />
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
