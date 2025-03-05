@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -10,7 +9,8 @@ body {
   height: 100%;
   overflow: hidden; /* Completely removes scrolling */
   display: flex;
-  background: linear-gradient(to bottom, #2a0144, #003d4c, #00a86b);
+  /* background: linear-gradient(to bottom, #2a0144, #003d4c, #00a86b); */
+  background-color: skyblue;
 }
 
 img {
@@ -19,26 +19,29 @@ img {
   object-fit: cover;
 }
 
-.content {
-  background-color: lightblue;
+#content-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
 }
 
-h2 {
+#content-text {
   font-family: "Pacifico", serif;
   font-weight: 400;
   font-style: normal;
+  margin: 2%;
 }
 
 .content-body {
   background-color: white;
+  display: flex;
 }
 
-.content-container {
-  margin-left: 10%;
+.content-body-container {
   padding: 2%;
 }
 
-.content-body-header {
+#content-body-header {
   padding: none;
 }
 
@@ -46,4 +49,54 @@ h2 {
   display: flex;
   flex-direction: row;
   gap: 10%;
+}
+
+.content-footer {
+  margin-bottom: 10%;
+}
+
+/* Removes default red border */
+input {
+  border: 2px solid #ccc; /* Neutral default border */
+  background-color: white;
+  padding: 8px;
+  border-radius: 5px;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+/* Style for invalid inputs AFTER user starts typing */
+input:invalid:not(:placeholder-shown) {
+  border: 2px solid red;
+  background-color: rgba(255, 0, 0, 0.1); /* Light red background */
+}
+
+/* Style when input is focused */
+input:focus {
+  border: 2px solid blue;
+  outline: none; /* Removes default browser outline */
+  box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5); /* Blue glow effect */
+  background-color: rgba(0, 0, 255, 0.05); /* Light blue background */
+}
+
+/* Optional: Valid input styling AFTER user starts typing */
+input:valid:not(:placeholder-shown) {
+  border: 2px solid green;
+}
+
+.content-footer-container {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2%;
+}
+
+#create-account {
+  margin-bottom: 3%;
+  width: 10vw;
+  height: 5vh;
+}
+
+#account-text {
+  margin-right: 1%;
 }
