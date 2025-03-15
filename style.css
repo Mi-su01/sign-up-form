@@ -7,10 +7,10 @@ html,
 body {
   width: 100%;
   height: 100%;
-  overflow: hidden; /* Completely removes scrolling */
+  overflow: hidden; /*Completely removes scrolling */
   display: flex;
   /* background: linear-gradient(to bottom, #2a0144, #003d4c, #00a86b); */
-  background-color: skyblue;
+  background: linear-gradient(to bottom, #90b0e0, #6d9bd4, #4a86c2);
 }
 
 img {
@@ -99,4 +99,8 @@ input:valid:not(:placeholder-shown) {
 
 #account-text {
   margin-right: 1%;
+}
+
+.footer-login {
+  display: flex;
 }
